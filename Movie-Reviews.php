@@ -9,6 +9,7 @@ Author URI: http://wordpress.com/
 License: GPLv2
 */
 ?>
+<?php
 add_action( 'init', 'create_movie_review' );
 function create_movie_review() {
     register_post_type( 'movie_reviews',
@@ -38,3 +39,4 @@ function create_movie_review() {
         )
     );
 }
+?>
